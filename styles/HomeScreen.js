@@ -1,0 +1,122 @@
+import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#000',
+        paddingTop: 60,
+        paddingHorizontal: 16,
+    },
+    header: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 16,
+    },
+    heading: {
+        color: '#fff',
+        fontSize: 24,
+        fontWeight: 'bold',
+    },
+    subHeading: {
+        color: '#f87171',
+        marginTop: 4,
+    },
+    scrollContainer: {
+        alignItems: 'center',
+        paddingBottom: 100,
+    },
+    gridContainer: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        gap: 20,
+    },
+    cardWrapper: {
+        width: 150,
+        height: 150,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    redCard: {
+        position: 'absolute',
+        width: 130,
+        height: 100,
+        backgroundColor: '#FF1515',
+        borderRadius: 20,
+        top: 25,
+        zIndex: 1,
+    },
+    iconBox: {
+        position: 'absolute',
+        top: 5,
+        backgroundColor: '#fff',
+        padding: 15,
+        borderRadius: 16,
+        zIndex: 2,
+        elevation: 4,
+    },
+    textBox: {
+        position: 'absolute',
+        bottom: 15,
+        backgroundColor: '#fff',
+        paddingVertical: 10,
+        paddingHorizontal: 10,
+        borderRadius: 16,
+        width: 130,
+        zIndex: 2,
+    },
+
+    cardText: {
+        textAlign: 'center',
+        fontWeight: '700',
+        fontSize: 13,
+        color: 'black',
+    },
+    redBackground: {
+        position: 'absolute',
+        backgroundColor: '#FF1515',
+        borderRadius: 16,
+        width: 120,
+        height: 90,
+        top: 10,
+        zIndex: 0,
+    },
+    card: {
+        backgroundColor: '#fff',
+        borderRadius: 16,
+        padding: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 120,
+        height: 90,
+        zIndex: 1,
+    },
+    iconCircle: {
+        backgroundColor: '#FF1515',
+        borderRadius: 50,
+        padding: 10,
+        marginBottom: 6,
+    },
+    cardText: {
+        fontSize: 12,
+        fontWeight: '600',
+        textAlign: 'center',
+        color: 'black',
+    },
+    bottomNav: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        backgroundColor: '#FF1515',
+        paddingVertical: 14,
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+    },
+});
+
+export default styles
