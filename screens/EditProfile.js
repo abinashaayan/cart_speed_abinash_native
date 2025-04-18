@@ -38,7 +38,7 @@ export default function EditProfile({ navigation }) {
             <InputField placeholder="Email" value="xyz@gmail.com" icon={<MaterialIcons name="email" size={15} color="white" />} />
             <InputField placeholder="Phone Number" value="91********" icon={<FontAwesome5 name="phone-alt" size={15} color="white" />} />
             <InputField placeholder="Address" value="xyzabc" icon={<Ionicons name="location" size={15} color="white" />} />
-            <TouchableOpacity style={styles.submitBtn}>
+            <TouchableOpacity style={styles.submitBtn} onPress={() => navigation.navigate('Profile')}>
                 <Text style={styles.submitText}>Submit</Text>
             </TouchableOpacity>
         </View>

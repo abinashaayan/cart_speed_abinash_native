@@ -45,7 +45,7 @@ export default function Profile({ navigation }) {
           <Ionicons name="chevron-forward" size={20} color="white" />
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.settingItem}>
+        <TouchableOpacity style={styles.settingItem} onPress={() => navigation.navigate('PasswordUpdateScreen')}>
           <View style={styles.settingLeft}>
             <FontAwesome5 name="lock" size={20} color="white" />
             <Text style={styles.settingText}>Change Password</Text>

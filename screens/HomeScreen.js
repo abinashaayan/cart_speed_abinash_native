@@ -28,16 +28,16 @@ export default function HomeScreen() {
                     <Text style={styles.heading}>Hey There!</Text>
                     <Text style={styles.subHeading}>Let's get certified for cart</Text>
                 </View>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate("Notofication")}>
                     <Ionicons name="notifications" size={26} color="red" />
                 </TouchableOpacity>
             </View>
             <ScrollView contentContainerStyle={styles.scrollContainer}>
                 <View style={styles.gridContainer}>
                     <Card label="Safety Video" onPress={() => navigation.navigate('VideoScreen')} IconComponent={<Ionicons name="play" size={40} color="black" />} />
-                    <Card label="Take Test" IconComponent={<FontAwesome5 name="file-alt" size={40} color="black" />} />
+                    <Card label="Take Test" onPress={() => navigation.navigate("TrainingScreen")} IconComponent={<FontAwesome5 name="file-alt" size={40} color="black" />} />
                     <Card label="Rules and regulations for LSVs" onPress={() => navigation.navigate("CartingRulesScreen")} IconComponent={<MaterialCommunityIcons name="clipboard-text" size={40} color="black" />} />
-                    <Card label="Good LSV practices for the area" IconComponent={<FontAwesome5 name="users" size={40} color="black" />} />
+                    <Card label="Good LSV practices for the area" onPress={() => navigation.navigate("LsvPractice")} IconComponent={<FontAwesome5 name="users" size={40} color="black" />} />
                     <Card label="Map of local area" onPress={() => navigation.navigate("LocalMapScreen")} IconComponent={<Entypo name="map" size={40} color="black" />} />
                     <Card label="All Certifications" onPress={() => navigation.navigate("Certificate")} IconComponent={<FontAwesome5 name="certificate" size={40} color="black" />} />
                 </View>

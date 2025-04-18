@@ -71,14 +71,16 @@ const styles = StyleSheet.create({
         marginLeft: 10,
     },
     badge: {
-        backgroundColor: 'white',
+        borderColor: 'lightgray',
+        borderWidth: 1,
         paddingHorizontal: 8,
         paddingVertical: 2,
-        borderRadius: 10,
+        borderRadius: 5,
         marginLeft: 10,
+        paddingHorizontal: 18
     },
     badgeText: {
-        color: '#FF1515',
+        color: '#fff',
         fontWeight: 'bold',
         fontSize: 12,
     },
